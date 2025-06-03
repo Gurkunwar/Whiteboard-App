@@ -233,13 +233,11 @@ const BoardProvider = ({ children }) => {
     });
   };
 
-  const textAreaBlurHandler = (text, toolboxState) => {
+  const textAreaBlurHandler = (text) => {
     dispatchBoardAction({
       type: BOARD_ACTIONS.CHANGE_TEXT,
       payload: {
         text,
-        // stroke: toolboxState[boardState.activeToolItem]?.stroke,
-        // size: toolboxState[boardState.activeToolItem]?.size,
       },
     });
   };
